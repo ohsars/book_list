@@ -14,7 +14,7 @@ export const getList = async (listId) => {
   return response.data;
 };
 
-// For some Reasons these endpoint aren't connecting, err 302
+// still cors error here
 export const createList = async (listData) => {
   const response = await axios.post(`${API_URL}/lists`, listData);
   return response.data;
